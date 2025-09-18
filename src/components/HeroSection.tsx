@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Github, Linkedin, Mail, Download, Upload } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -25,6 +26,39 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-20 max-w-4xl mx-auto px-6 text-center animate-slide-up">
+        {/* Profile Picture Area */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative group">
+            <Avatar className="w-32 h-32 ring-4 ring-primary/20 transition-all duration-300 group-hover:ring-primary/40">
+              <AvatarImage src="" alt="Profile Picture" />
+              <AvatarFallback className="bg-gradient-primary text-primary-foreground text-2xl font-bold">
+                AC
+              </AvatarFallback>
+            </Avatar>
+            <div className="absolute inset-0 rounded-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer">
+              <Upload className="h-8 w-8 text-white" />
+            </div>
+            <input 
+              type="file" 
+              accept="image/png,image/jpeg,image/jpg" 
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer rounded-full"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) {
+                  const reader = new FileReader();
+                  reader.onload = (event) => {
+                    const avatar = document.querySelector('[alt="Profile Picture"]') as HTMLImageElement;
+                    if (avatar && event.target?.result) {
+                      avatar.src = event.target.result as string;
+                    }
+                  };
+                  reader.readAsDataURL(file);
+                }
+              }}
+            />
+          </div>
+        </div>
+
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           <span className="text-foreground">Hi, I'm </span>
           <span className="hero-gradient">Alex Chen</span>
