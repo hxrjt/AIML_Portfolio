@@ -3,6 +3,7 @@ import SkillsSection from "./SkillsSection";
 import ProjectsSection from "./ProjectsSection";
 import AboutSection from "./AboutSection";
 import ContactSection from "./ContactSection";
+import ThemeToggle from "./ThemeToggle";
 
 const Portfolio = () => {
   return (
@@ -14,7 +15,7 @@ const Portfolio = () => {
             <div className="text-xl font-bold text-gradient">
               Alex Chen
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               {['Home', 'Skills', 'Projects', 'About', 'Contact'].map((item) => (
                 <a
                   key={item}
@@ -24,6 +25,10 @@ const Portfolio = () => {
                   {item}
                 </a>
               ))}
+              <ThemeToggle />
+            </div>
+            <div className="md:hidden">
+              <ThemeToggle />
             </div>
           </div>
         </div>
