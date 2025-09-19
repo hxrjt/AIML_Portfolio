@@ -25,61 +25,61 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full animate-slide-up">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-screen py-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 w-full animate-slide-up">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-screen py-20 pt-24 lg:py-20">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col justify-center text-left lg:pr-8">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <div className="flex flex-col justify-center text-center lg:text-left lg:pr-8 order-2 lg:order-1">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="text-foreground">Hi, I'm </span>
               <span className="hero-gradient">Alex Chen</span>
             </h1>
             
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
               AI/ML Engineer & Data Scientist
             </h2>
             
-            <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Transforming complex data into intelligent solutions. Specializing in machine learning, 
               deep learning, and scalable AI systems that drive business impact.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button className="btn-hero px-8 py-6 text-lg font-semibold">
-                <Mail className="mr-2 h-5 w-5" />
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 justify-center lg:justify-start">
+              <Button className="btn-hero px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold">
+                <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Get In Touch
               </Button>
-              <Button variant="outline" className="btn-outline-glow px-8 py-6 text-lg">
-                <Download className="mr-2 h-5 w-5" />
+              <Button variant="outline" className="btn-outline-glow px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg">
+                <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Download CV
               </Button>
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-6">
-              <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80">
-                <Github className="h-6 w-6" />
+            <div className="flex gap-4 sm:gap-6 justify-center lg:justify-start">
+              <a href="#" className="p-2 sm:p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80 touch-target">
+                <Github className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
-              <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80">
-                <Linkedin className="h-6 w-6" />
+              <a href="#" className="p-2 sm:p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80 touch-target">
+                <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
-              <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80">
-                <Mail className="h-6 w-6" />
+              <a href="#" className="p-2 sm:p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80 touch-target">
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
             </div>
           </div>
 
           {/* Right Column - Profile Picture */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative group">
-              <Avatar className="w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] ring-4 ring-primary/20 transition-all duration-300 group-hover:ring-primary/40">
+              <Avatar className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] ring-4 ring-primary/20 transition-all duration-300 group-hover:ring-primary/40">
                 <AvatarImage src="" alt="Profile Picture" />
-                <AvatarFallback className="bg-gradient-primary text-primary-foreground text-6xl md:text-8xl font-bold">
+                <AvatarFallback className="bg-gradient-primary text-primary-foreground text-4xl sm:text-6xl md:text-8xl font-bold">
                   AC
                 </AvatarFallback>
               </Avatar>
               <div className="absolute inset-0 rounded-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer">
-                <Upload className="h-16 w-16 text-white" />
+                <Upload className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 text-white" />
               </div>
               <input 
                 type="file" 

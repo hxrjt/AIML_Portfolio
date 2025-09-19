@@ -48,14 +48,14 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-accent">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-accent">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gradient">Let's Connect</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Have a project in mind or want to discuss AI/ML opportunities? 
             I'd love to hear from you!
           </p>

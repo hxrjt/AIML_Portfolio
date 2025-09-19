@@ -43,14 +43,14 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gradient">Technical Skills</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit for building intelligent systems and extracting insights from data
           </p>
         </div>
@@ -90,7 +90,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
           {[
             { number: "50+", label: "Projects Completed" },
             { number: "5+", label: "Years Experience" },
@@ -102,10 +102,10 @@ const SkillsSection = () => {
               className="text-center animate-slide-up"
               style={{ animationDelay: `${0.6 + index * 0.1}s` }}
             >
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient mb-2">
                 {stat.number}
               </div>
-              <div className="text-muted-foreground">
+              <div className="text-sm sm:text-base text-muted-foreground">
                 {stat.label}
               </div>
             </div>
