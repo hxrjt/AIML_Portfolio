@@ -35,12 +35,12 @@ const HeroSection = () => {
             </h1>
             
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
-              AI/ML Engineer & Data Scientist
+              Software Engineer & Algorithm Expert
             </h2>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Transforming complex data into intelligent solutions. Specializing in machine learning, 
-              deep learning, and scalable AI systems that drive business impact.
+              Solving complex algorithmic challenges with elegant code. Specializing in data structures, 
+              algorithms, and competitive programming with 1000+ LeetCode problems solved.
             </p>
 
             {/* CTA Buttons */}
