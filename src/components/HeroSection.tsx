@@ -72,27 +72,26 @@ const HeroSection = () => {
           {/* Right Column - Profile Picture */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative group">
-              <Avatar className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] ring-4 ring-primary/20 transition-all duration-300 group-hover:ring-primary/40">
-                <AvatarImage src="" alt="Profile Picture" />
-                <AvatarFallback className="bg-gradient-primary text-primary-foreground text-4xl sm:text-6xl md:text-8xl font-bold">
-                  AC
-                </AvatarFallback>
-              </Avatar>
-              <div className="absolute inset-0 rounded-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer">
+              <img 
+                src="" 
+                alt="Profile Picture"
+                className="w-64 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[450px] lg:w-[400px] lg:h-[500px] object-cover transition-all duration-300 group-hover:shadow-lg"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer">
                 <Upload className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 text-white" />
               </div>
               <input 
                 type="file" 
                 accept="image/png,image/jpeg,image/jpg" 
-                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer rounded-full"
+                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                 onChange={(e) => {
                   const file = e.target.files?.[0];
                   if (file) {
                     const reader = new FileReader();
                     reader.onload = (event) => {
-                      const avatar = document.querySelector('[alt="Profile Picture"]') as HTMLImageElement;
-                      if (avatar && event.target?.result) {
-                        avatar.src = event.target.result as string;
+                      const img = document.querySelector('[alt="Profile Picture"]') as HTMLImageElement;
+                      if (img && event.target?.result) {
+                        img.src = event.target.result as string;
                       }
                     };
                     reader.readAsDataURL(file);
