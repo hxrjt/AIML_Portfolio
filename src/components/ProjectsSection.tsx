@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Play } from "lucide-react";
+import { ExternalLink, Github, Code2 } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -9,28 +9,28 @@ import project3 from "@/assets/project-3.jpg";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Neural Style Transfer App",
-      description: "A deep learning application that applies artistic styles to images using convolutional neural networks. Built with TensorFlow and deployed as an interactive Streamlit app.",
+      title: "LeetCode Problem Tracker",
+      description: "A comprehensive web application to track LeetCode progress, analyze problem patterns, and identify weak areas. Features include difficulty tracking, topic categorization, and performance analytics.",
       image: project1,
-      tags: ["TensorFlow", "Streamlit", "Computer Vision", "Deep Learning"],
+      tags: ["React", "Node.js", "MongoDB", "Chart.js", "LeetCode API"],
       github: "#",
       demo: "#",
       featured: true
     },
     {
-      title: "Real-time Sales Analytics",
-      description: "A comprehensive dashboard for real-time sales analytics with predictive modeling. Processes 100K+ transactions daily with ML-powered insights.",
+      title: "Algorithm Visualizer",
+      description: "Interactive visualization tool for common algorithms and data structures. Helps understand sorting algorithms, graph traversals, and dynamic programming with step-by-step animations.",
       image: project2,
-      tags: ["Python", "Apache Spark", "Tableau", "AWS", "MLflow"],
+      tags: ["JavaScript", "D3.js", "HTML5 Canvas", "CSS3", "Algorithms"],
       github: "#",
       demo: "#",
       featured: true
     },
     {
-      title: "Medical Image Classification",
-      description: "CNN-based system for medical image analysis achieving 95% accuracy. Deployed in production to assist radiologists in diagnosis.",
+      title: "Coding Interview Simulator",
+      description: "Mock interview platform with real-time code execution, multiple programming languages support, and automated test case validation. Perfect for FAANG interview preparation.",
       image: project3,
-      tags: ["PyTorch", "OpenCV", "Docker", "FastAPI", "PostgreSQL"],
+      tags: ["Python", "Docker", "WebSockets", "Judge0 API", "React"],
       github: "#",
       demo: "#",
       featured: false
@@ -43,10 +43,10 @@ const ProjectsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-            <span className="text-gradient">Featured Projects</span>
+            <span className="text-gradient">Coding Projects</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of AI/ML solutions that solve real-world problems and drive business value
+            A showcase of algorithmic solutions and tools that enhance the competitive programming experience
           </p>
         </div>
 
@@ -111,8 +111,8 @@ const ProjectsSection = () => {
                     size="sm"
                     className="btn-outline-glow flex-1"
                   >
-                    <Play className="h-4 w-4 mr-2" />
-                    Demo
+                    <Code2 className="h-4 w-4 mr-2" />
+                    Live Demo
                   </Button>
                 </div>
               </CardContent>
@@ -124,7 +124,7 @@ const ProjectsSection = () => {
         <div className="text-center mt-12">
           <Button className="btn-hero px-8 py-3">
             <ExternalLink className="mr-2 h-5 w-5" />
-            View All Projects
+            View GitHub Profile
           </Button>
         </div>
       </div>

@@ -55,6 +55,8 @@ All colors MUST be HSL.
   .dark {
     /* Dark Navy Theme with Green Accents */
     --background: 222 47% 11%;
+    /* Dark Navy Theme with Green Accents */
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
     --card: 215 28% 17%;
     --card-foreground: 210 40% 98%;
@@ -81,6 +83,7 @@ All colors MUST be HSL.
     /* Dark mode shadows with green glow */
     --shadow-glow: 0 0 40px hsl(142 76% 36% / 0.3);
     --shadow-card: 0 8px 32px hsl(222 84% 3% / 0.5);
+    --shadow-elegant: 0 10px 30px -10px hsl(142 76% 36% / 0.2);
     --shadow-elegant: 0 10px 30px -10px hsl(142 76% 36% / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

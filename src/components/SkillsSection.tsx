@@ -1,43 +1,43 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Database, Code, BarChart3, Cloud, Cpu } from "lucide-react";
+import { Code, Database, Zap, Trophy, Target, BookOpen } from "lucide-react";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
-      icon: Brain,
-      title: "Machine Learning",
-      skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "XGBoost", "LightGBM"],
+      icon: Code,
+      title: "Programming Languages",
+      skills: ["Python", "Java", "C++", "JavaScript", "TypeScript", "Go"],
       color: "text-primary"
     },
     {
-      icon: Code,
-      title: "Programming",
-      skills: ["Python", "R", "SQL", "JavaScript", "Java", "C++"],
+      icon: Zap,
+      title: "Data Structures",
+      skills: ["Arrays", "Linked Lists", "Trees", "Graphs", "Hash Tables", "Heaps"],
+      color: "text-accent"
+    },
+    {
+      icon: Target,
+      title: "Algorithms",
+      skills: ["Dynamic Programming", "Greedy", "Backtracking", "DFS/BFS", "Sorting", "Binary Search"],
+      color: "text-primary"
+    },
+    {
+      icon: Trophy,
+      title: "Competitive Programming",
+      skills: ["LeetCode", "Codeforces", "AtCoder", "TopCoder", "HackerRank", "CodeChef"],
       color: "text-accent"
     },
     {
       icon: Database,
-      title: "Data Engineering",
-      skills: ["Apache Spark", "Airflow", "Docker", "Kubernetes", "PostgreSQL", "MongoDB"],
+      title: "System Design",
+      skills: ["Scalability", "Load Balancing", "Caching", "Databases", "Microservices", "APIs"],
       color: "text-primary"
     },
     {
-      icon: BarChart3,
-      title: "Data Visualization",
-      skills: ["Streamlit", "Plotly", "Tableau", "Power BI", "D3.js", "Matplotlib"],
-      color: "text-accent"
-    },
-    {
-      icon: Cloud,
-      title: "Cloud Platforms",
-      skills: ["AWS", "Google Cloud", "Azure", "Databricks", "Snowflake", "BigQuery"],
-      color: "text-primary"
-    },
-    {
-      icon: Cpu,
-      title: "MLOps",
-      skills: ["MLflow", "Kubeflow", "DVC", "Weights & Biases", "TensorBoard", "Neptune"],
+      icon: BookOpen,
+      title: "Interview Prep",
+      skills: ["Coding Interviews", "System Design", "Behavioral", "Mock Interviews", "FAANG Prep", "Whiteboarding"],
       color: "text-accent"
     }
   ];
@@ -51,7 +51,7 @@ const SkillsSection = () => {
             <span className="text-gradient">def skills():</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for building intelligent systems and extracting insights from data
+            A comprehensive toolkit for solving algorithmic challenges and acing technical interviews
           </p>
         </div>
 
@@ -92,10 +92,10 @@ const SkillsSection = () => {
         {/* Stats Section */}
         <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
           {[
-            { number: "50+", label: "Projects Completed" },
-            { number: "5+", label: "Years Experience" },
-            { number: "15+", label: "Technologies" },
-            { number: "100K+", label: "Lines of Code" }
+            { number: "1000+", label: "Problems Solved" },
+            { number: "3+", label: "Years Coding" },
+            { number: "Expert", label: "LeetCode Rating" },
+            { number: "50K+", label: "Lines of Code" }
           ].map((stat, index) => (
             <div 
               key={stat.label} 
