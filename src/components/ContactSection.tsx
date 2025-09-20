@@ -9,14 +9,14 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "#",
-      username: "@alexchen"
+      href: "https://github.com/hxrjt",
+      username: "@hxrjt"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "#",
-      username: "Alex Chen"
+      href: "https://www.linkedin.com/in/harjyot-singh-75a835254/",
+      username: "Harjyot Singh"
     },
     {
       icon: Twitter,
@@ -30,14 +30,14 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.chen@example.com",
-      href: "mailto:alex.chen@example.com"
+      value: "harjyotgdsc@gmail.com",
+      href: "mailto:harjyotgdsc@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 7984059865",
+      href: "tel:+917984059865"
     },
     {
       icon: MapPin,

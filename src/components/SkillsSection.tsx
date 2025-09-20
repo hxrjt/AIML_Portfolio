@@ -48,7 +48,7 @@ const SkillsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-            <span className="text-gradient">Technical Skills</span>
+            <span className="text-gradient">def skills():</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit for building intelligent systems and extracting insights from data

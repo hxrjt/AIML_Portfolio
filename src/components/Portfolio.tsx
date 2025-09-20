@@ -27,7 +27,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="text-xl font-bold text-gradient">
-              Alex Chen
+              <p>hxrjt.dev</p>
             </div>
             
             {/* Desktop Navigation */}
@@ -99,7 +99,7 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 border-t border-border/50">
+      {/* <footer className="py-8 px-4 sm:px-6 border-t border-border/50">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-sm sm:text-base text-muted-foreground">
             © 2024 Alex Chen. Built with React, TypeScript, and Tailwind CSS.
@@ -108,7 +108,7 @@ const Portfolio = () => {
             Inspired by Streamlit's elegant design philosophy
           </p>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 };

@@ -5,37 +5,37 @@ import { GraduationCap, Briefcase, Award, Coffee } from "lucide-react";
 const AboutSection = () => {
   const experiences = [
     {
-      title: "Senior ML Engineer",
-      company: "TechCorp AI",
+      title: "System Engineer Intern",
+      company: "Techforce Services",
       period: "2022 - Present",
       description: "Leading ML initiatives, building scalable AI systems, and mentoring junior engineers."
-    },
-    {
-      title: "Data Scientist",
-      company: "DataInsights Inc",
-      period: "2020 - 2022",
-      description: "Developed predictive models and analytics solutions for Fortune 500 clients."
-    },
-    {
-      title: "ML Research Intern",
-      company: "AI Lab University",
-      period: "2019 - 2020",
-      description: "Research in computer vision and natural language processing applications."
     }
+    // {
+    //   title: "Data Scientist",
+    //   company: "DataInsights Inc",
+    //   period: "2020 - 2022",
+    //   description: "Developed predictive models and analytics solutions for Fortune 500 clients."
+    // },
+    // {
+    //   title: "ML Research Intern",
+    //   company: "AI Lab University",
+    //   period: "2019 - 2020",
+    //   description: "Research in computer vision and natural language processing applications."
+    // }
   ];
 
   const education = [
     {
-      degree: "M.S. Computer Science",
-      school: "Stanford University",
-      period: "2018 - 2020",
-      focus: "Machine Learning & AI"
+      degree: "Bachelor of Technology",
+      school: "Arya College of Engineering & IT (Affiliated to RTU)",
+      period: "2022 - 2026",
+      focus: "Information Technology"
     },
     {
-      degree: "B.S. Data Science",
-      school: "UC Berkeley",
-      period: "2014 - 2018",
-      focus: "Statistics & Mathematics"
+      degree: "Senior Secondary Education",
+      school: "Delhi Public School Vadodara",
+      period: "2009 - 2022",
+      focus: "Physics, Chemistry and Mathematics"
     }
   ];
 
