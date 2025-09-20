@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Github, Linkedin, Mail, Download, Upload } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Upload, Code } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -64,7 +64,7 @@ const HeroSection = () => {
                 <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
               <a href="#" className="p-2 sm:p-3 rounded-full bg-card border border-border hover:border-primary transition-colors hover:bg-card/80 touch-target">
-                <Mail className="h-5 w-5 sm:h-6 sm:w-6" />
+                <Code className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
             </div>
           </div>
