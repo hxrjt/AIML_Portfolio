@@ -8,47 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Clean Tech Theme */
-    --background: 213 33% 97%;
-    --foreground: 0 0% 12%;
+    /* Default to Dark Navy Theme with Green Accents */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
 
-    --card: 213 33% 97%;
-    --card-foreground: 0 0% 12%;
+    --card: 215 28% 17%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 213 33% 97%;
-    --popover-foreground: 0 0% 12%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Royal Tech Blue */
-    --primary: 217 91% 53%;
-    --primary-foreground: 213 33% 97%;
+    /* Bright Green Primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 213 20% 90%;
-    --secondary-foreground: 0 0% 12%;
+    --secondary: 215 25% 20%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 213 20% 94%;
-    --muted-foreground: 0 0% 29%;
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 213 33% 97%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 213 20% 85%;
-    --input: 213 33% 97%;
-    --ring: 217 91% 53%;
+    --border: 215 25% 20%;
+    --input: 215 20% 15%;
+    --ring: 142 76% 36%;
 
     --radius: 0.75rem;
 
-    /* Custom Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 53%), hsl(217 91% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(213 33% 97%), hsl(213 20% 94%));
-    --gradient-accent: linear-gradient(45deg, hsl(217 91% 53% / 0.1), hsl(217 91% 60% / 0.1));
+    /* Custom Design Tokens with Green Accents */
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 28% 17%), hsl(215 25% 20%));
+    --gradient-accent: linear-gradient(45deg, hsl(142 76% 36% / 0.1), hsl(142 76% 40% / 0.1));
     
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(217 91% 53% / 0.3);
-    --shadow-card: 0 8px 32px hsl(213 20% 85% / 0.3);
-    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 53% / 0.2);
+    /* Shadows with Green Glow */
+    --shadow-glow: 0 0 40px hsl(142 76% 36% / 0.3);
+    --shadow-card: 0 8px 32px hsl(222 84% 3% / 0.5);
+    --shadow-elegant: 0 10px 30px -10px hsl(142 76% 36% / 0.2);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,45 +72,45 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark Tech Theme */
-    --background: 222 84% 5%;
+    /* Dark Navy Theme with Green Accents */
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
-    --card: 222 84% 7%;
+    --card: 215 28% 17%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 84% 7%;
+    --popover: 215 28% 17%;
     --popover-foreground: 210 40% 98%;
 
-    /* Royal Tech Blue for dark mode */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 84% 5%;
+    /* Bright Green Primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 217 32% 17%;
+    --secondary: 215 25% 20%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217 32% 15%;
+    --muted: 215 20% 15%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 217 91% 65%;
-    --accent-foreground: 222 84% 5%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 15%;
-    --ring: 217 91% 60%;
+    --border: 215 25% 20%;
+    --input: 215 20% 15%;
+    --ring: 142 76% 36%;
 
-    /* Dark mode custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(222 84% 7%), hsl(217 32% 15%));
-    --gradient-accent: linear-gradient(45deg, hsl(217 91% 60% / 0.1), hsl(217 91% 65% / 0.1));
+    /* Dark mode custom tokens with green accents */
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 28% 17%), hsl(215 25% 20%));
+    --gradient-accent: linear-gradient(45deg, hsl(142 76% 36% / 0.1), hsl(142 76% 40% / 0.1));
     
-    /* Dark mode shadows */
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    /* Dark mode shadows with green glow */
+    --shadow-glow: 0 0 40px hsl(142 76% 36% / 0.3);
     --shadow-card: 0 8px 32px hsl(222 84% 3% / 0.5);
-    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(142 76% 36% / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
