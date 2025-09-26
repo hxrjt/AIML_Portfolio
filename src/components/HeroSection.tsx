@@ -83,11 +83,25 @@ const HeroSection = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 justify-center lg:justify-start">
-                <Button className="btn-hero px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold">
+                <Button
+                  className="btn-hero px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold"
+                  onClick={() => {
+                    window.open("mailto:harjyotgdsc@gmail.com", "_blank");
+                  }}
+                >
                   <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Get In Touch
                 </Button>
-                <Button variant="outline" className="btn-outline-glow px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg">
+                <Button
+                  variant="outline"
+                  className="btn-outline-glow px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg"
+                  onClick={() => {
+                    window.open(
+                      "https://drive.google.com/file/d/1EpuYyQp_p8Mk-jU6FO5A8ASycNATx1dO/view?usp=sharing", // <-- Replace with your actual Drive file ID
+                      "_blank"
+                    );
+                  }}
+                >
                   <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                   Download CV
                 </Button>
